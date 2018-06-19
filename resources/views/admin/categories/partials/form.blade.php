@@ -1,11 +1,11 @@
 <label for="">Status</label>
 <select class="form-control" name="published" id="">
 	@if (isset($category->id))
-		<option value="0" @if($category->published == 0) selected="" @endif> Published</option>
-		<option value="1" @if($category->published == 1) selected="" @endif> No published</option>
+		<option value="1" @if($category->published == 1) selected="" @endif> Published</option>
+		<option value="0" @if($category->published == 0) selected="" @endif> No published</option>
 	@else
-		<option value="0"> Published</option>
-		<option value="1"> No published</option>
+		<option value="1"> Published</option>
+		<option value="0"> No published</option>
 	@endif
 </select>
 
